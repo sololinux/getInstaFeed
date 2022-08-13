@@ -1,0 +1,86 @@
+.insta{
+  height: auto;
+}
+
+.post{
+  width: 450px;
+  height: auto;
+  margin: 20px 0 0 0px;
+  border: 0.5px solid rgba(163, 157, 157, 0.589);
+}
+
+.top{margin-top: -10px;}
+
+.top .dp{
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  float: left;
+  margin: 0 0 0 10px;
+}
+
+.top p{
+  padding: 10px 0 0 50px;
+  font-weight: 600;
+}
+
+.postImg{
+  max-height: 800px;
+  max-width: 450px;
+}
+
+.bottom{
+  padding: 10px 0 0 10px;
+}
+
+.bottom .logo{
+  font-size: 23px;
+} 
+
+.logo i{
+  padding: 0 10px 0 0;
+}
+
+.bottom .time{
+  color: rgb(105, 105, 105);
+  font-size: 12px;
+  margin-top: -10px;
+}
+
+.coursal{
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: auto;
+
+  width: 100%;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.coursal::-webkit-scrollbar {
+  display: none;
+}
+
+.CpostImg{
+  width: 100%;
+  flex: none;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.fa-solid{
+  font-size: 38px;
+  color: white;
+  padding: 3px;
+}
+
+#left{
+  margin: auto -20px auto auto;
+  z-index: 2;
+}
+#right{
+  margin: auto auto auto -20px;
+  z-index: 2;
+}
+

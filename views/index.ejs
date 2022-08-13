@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="ig.css">
+    <script src="https://kit.fontawesome.com/a089deb4c5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="insta">
+        <% data.forEach((post)=>{%>
+            <div class="post">
+                <div class="top">
+                    <img src="https://source.unsplash.com/200x200/?man" alt="dp" class="dp">
+                    <p><%= post.username%></p>
+                </div>
+                <div class="main">
+
+                    <%if(post.media_type == 'CAROUSEL_ALBUM'){%>
+                        <div class="coursal">
+                            <% post.children.data.forEach((cpost)=>{%>
+                                <i class="fa-solid fa-angle-left" id="left"></i>
+                                <% if(cpost.media_type =='VIDEO' ){%>
+                                    <video class="CpostImg" controls>
+                                        <source src=<%=cpost.media_url%> type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                <%} else{%>
+                                    <img class="CpostImg" src=<%=cpost.media_url%> >
+                                <%}%>
+                                <i class="fa-solid fa-angle-right" id="right"></i>
+                            <%})%>
+                        </div>
+
+                    <% }else if(post.media_type=='VIDEO' ){%>
+                        <video class="postImg" controls>
+                            <source src=<%=post.media_url%> type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+
+                    <%} else{%>
+                        <img class="postImg" src=<%=post.media_url%> >
+                    <%}%>
+                </div>
+                <div class="bottom">
+                    <div class="logo">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </div>
+                    <div class="caption">
+                        <p class="user"><b><%= post.username%> </b><span class="cap"><%=post.caption%></span></p>
+                    </div>
+                    <div class="time">
+                        <p class="time"><%= (post.timestamp.substr(0,10))%></p>
+                    </div>
+
+                </div>
+            </div>
+        <%})%>
+    </div>
+
+</body>
+
+</html>
