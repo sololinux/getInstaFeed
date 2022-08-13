@@ -1,4 +1,3 @@
-# getInstaFeed
 
 <br/>
 
@@ -6,6 +5,7 @@
   <h2>Description</h2>
   <p>This is a node.js program made to get/fetch your instagram posts including photo, videos and render into html(ejs view engine) using Instagram Basic Display API</p>
 </div>
+<br/>
 
 <div id="intro">
   <h2>Before Using </h2>
@@ -34,5 +34,12 @@ npm install
 npm start
 ```
   
+</div>
+  
+  <br/>
+  
+<div>
+  <h2>Limitations</h2>
+  <p>The only limitation of the program is it cannot get the user profile picture(dp). Instead of user's dp it uses random pic from unsplash.</p>
 </div>
 
