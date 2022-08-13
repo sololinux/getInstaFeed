@@ -9,7 +9,7 @@
 
 <div id="intro">
   <h2>Before Using </h2>
-  <p>Keep your Disply API token(eg: IGH.....) in .env file at the root of the directory. If you don't have one or don't know how to get one view documentation <a href='https://developers.facebook.com/docs/instagram-basic-display-api/getting-started'>here<a></p>
+  <p>Keep your Disply API token(eg: IGH.....) in .env file at the root of the directory. If you don't have one or don't know how to get one view documentation <a href='https://developers.facebook.com/docs/instagram-basic-display-api/getting-started' target='_blank'>here<a></p>
 </div>
 
 <br/><br/>
