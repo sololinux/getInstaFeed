@@ -17,15 +17,19 @@
 <div>
   <h2>Using Method</h2>
 <p>1: Clone the repo first</p>
+  
 ```
 git clone https://github.com/sololinux/getInstaFeed.git
 ```
+  
 <p>2: Go to cloned repo(root) and install needed pacakages(node modules)</p>
 
 ```
 npm install
 ```
+  
  <p>3: Start the program either using npm or node index.js</p>
+  
 ```
 npm start
 ```
