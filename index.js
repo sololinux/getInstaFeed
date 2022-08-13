@@ -29,6 +29,9 @@ app.get('/', async (req, res) => {
 
     //render the data from Display API to index
     res.render('index', { data: await getPost() });
+    
+    
+    //console.log(await getPost()); ---> //Get the posts link in json format
 });
 
 
